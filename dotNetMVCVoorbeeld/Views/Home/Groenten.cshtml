@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Groenten</title>
+</head>
+<body>
+    <h1>Groenten</h1>
+    <ul>
+        @foreach (string groenten in ViewBag.Groenten) {
+            <li>@groenten</li>
+        }
+    </ul>
+    <p>@ViewBag.Zoekresultaat</p>
+</body>
+</html>
