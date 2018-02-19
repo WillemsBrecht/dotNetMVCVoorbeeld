@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Studenten</title>
+</head>
+<body>
+    <h2>Studenten</h2>
+    <ul>
+    @foreach (MyHowest.Student student in ViewBag.Studenten) {
+        <li>@student.ToString()</li>
+    }
+    </ul>
+</body>
+</html>
